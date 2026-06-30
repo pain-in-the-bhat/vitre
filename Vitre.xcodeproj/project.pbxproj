@@ -8,28 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		1DD047340A34687102BDDCB3 /* VitreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B5EC23FF9F0B9994F88BB /* VitreApp.swift */; };
-		7CAC5B3BBAC2B76BC9747B3E /* GlassRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9A50D0328A424D8427051B /* GlassRenderer.swift */; };
-		9DC61DD301D4F6C5998B1A94 /* StainedGlassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA947147F6E46B8D7DB93975 /* StainedGlassView.swift */; };
+		389EB92647264937277F8E83 /* RoseWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207981756FE6ECBFBA13B2BF /* RoseWindow.swift */; };
 		C763098DE3FC57615919FA60 /* OpenCodeDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44411F557CC15667E59C84D0 /* OpenCodeDB.swift */; };
+		DBBDD71E242A3F1412E4951C /* RoseRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B3B22B21C93113F126DC36 /* RoseRenderer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		189B5EC23FF9F0B9994F88BB /* VitreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitreApp.swift; sourceTree = "<group>"; };
+		207981756FE6ECBFBA13B2BF /* RoseWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoseWindow.swift; sourceTree = "<group>"; };
+		37B3B22B21C93113F126DC36 /* RoseRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoseRenderer.swift; sourceTree = "<group>"; };
 		44411F557CC15667E59C84D0 /* OpenCodeDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenCodeDB.swift; sourceTree = "<group>"; };
 		5E64D018BCCAD4D2CE5B1BEB /* Vitre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vitre.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E9A50D0328A424D8427051B /* GlassRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassRenderer.swift; sourceTree = "<group>"; };
 		BDDFB3ADC43C8480B689B0CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		DA947147F6E46B8D7DB93975 /* StainedGlassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StainedGlassView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		0118A435D4C4B16C8193812B /* Vitre */ = {
 			isa = PBXGroup;
 			children = (
-				7E9A50D0328A424D8427051B /* GlassRenderer.swift */,
 				BDDFB3ADC43C8480B689B0CD /* Info.plist */,
 				44411F557CC15667E59C84D0 /* OpenCodeDB.swift */,
-				DA947147F6E46B8D7DB93975 /* StainedGlassView.swift */,
+				37B3B22B21C93113F126DC36 /* RoseRenderer.swift */,
+				207981756FE6ECBFBA13B2BF /* RoseWindow.swift */,
 				189B5EC23FF9F0B9994F88BB /* VitreApp.swift */,
 			);
 			path = Vitre;
@@ -109,9 +109,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CAC5B3BBAC2B76BC9747B3E /* GlassRenderer.swift in Sources */,
 				C763098DE3FC57615919FA60 /* OpenCodeDB.swift in Sources */,
-				9DC61DD301D4F6C5998B1A94 /* StainedGlassView.swift in Sources */,
+				DBBDD71E242A3F1412E4951C /* RoseRenderer.swift in Sources */,
+				389EB92647264937277F8E83 /* RoseWindow.swift in Sources */,
 				1DD047340A34687102BDDCB3 /* VitreApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
