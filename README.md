@@ -1,8 +1,20 @@
 # Vitre
 
-A macOS menu bar app that shows your daily OpenCode token burn as a stained-glass heatmap. Glance at it: the grid tells you whether your $10/month is earning itself.
+A macOS menu bar app that transforms your daily OpenCode token usage into a living stained-glass window.
 
-One flame in the menu bar. Click it, see 30 days of ember-tinted glass tiles. Bright = heavy burn. Dark = quiet day. No badges, no streaks, no judgment. Just the ambient temperature of your usage.
+One flame in the menu bar. Click it — a cathedral-glass panel appears. Each day is an irregular pane of colored glass. Indigo whispers quiet days. Amber glows with activity. Gold blazes on heavy burn days. Lead outlines separate the panes. Click any pane to reveal its story.
+
+## Design
+
+Vitre is not a dashboard. It's an ambient artifact — a piece of digital craftsmanship that quietly reflects your month of building software with AI. The window should feel handcrafted, not algorithmic.
+
+**Cathedral palette:** indigo → teal → amber → gold. Cold panes mean the subscription is idle. Warm panes mean it's earning.
+
+**Irregular geometry:** each day is a unique glass shard with jittered vertices and slight concavity. The tessellation is seeded by month, so the same month always produces the same window — but no two months look alike.
+
+**Information without dashboards:** today's token count dominates the header. Three metrics below the window — this week, average daily, peak day. The panes tell the rest.
+
+**Click to explore:** tap any pane to see its date, token count, and session count. Today's pane is pre-selected.
 
 ## Install
 
@@ -10,58 +22,28 @@ One flame in the menu bar. Click it, see 30 days of ember-tinted glass tiles. Br
 brew install xcodegen
 cd vitre && xcodegen generate
 open Vitre.xcodeproj
-# In Xcode: ⌘B, then ⌘R
+# ⌘B, then ⌘R
 ```
 
-Requires macOS 14+ (MenuBarExtra) and [OpenCode](https://opencode.ai) with its SQLite database at `~/.local/share/opencode/opencode.db`.
-
-## How It Works
-
-Vitre reads `opencode.db` directly — no sandbox, no data pipeline, no inter-process sharing. The menu bar app opens the SQLite file, runs a single aggregation query (`GROUP BY date`), and renders a 7×5 grid of glass tiles.
-
-- **30-day rolling window** — Monday-aligned weeks
-- **Log-scale ember colors** — visible differentiation from 10K to 134M tokens
-- **Today marker** — subtle white stroke on the current day's cell
-- **Footer** — today's token count and session count
-- **Auto-refresh** — every hour via background timer
-- **Pure menu bar** — no dock icon, no window, lives in `LSUIElement` mode
+Requires macOS 14+ and [OpenCode](https://opencode.ai) with its database at `~/.local/share/opencode/opencode.db`.
 
 ## Architecture
 
 ```
 Vitre/
-├── VitreApp.swift        — MenuBarExtra + popover host, timer refresh
-├── HeatmapView.swift     — 7×5 grid, day labels, today footer
-├── GlassTile.swift       — Colored tile (regularMaterial base, upgrade to .glassEffect at macOS 26)
-├── EmberScale.swift      — Log-scale orange tint mapping (10K→∞)
-└── OpenCodeDB.swift      — Direct SQLite read, DayAggregate model
+├── VitreApp.swift        — AppKit NSStatusItem + NSPopover, data loading
+├── StainedGlassView.swift — PaneShape, PaneView, tooltip, click interaction
+├── GlassRenderer.swift   — GlassPane model, jittered tessellation, cathedral palette
+└── OpenCodeDB.swift      — Direct SQLite read from opencode.db
 
-project.yml               — XcodeGen project spec
+project.yml               — XcodeGen spec
 ```
 
-~300 lines of Swift. No dependencies. No external libraries.
+~500 lines of Swift. No dependencies. Reads opencode.db directly — no sandbox, no provisioning, no data pipeline.
 
 ## Liquid Glass
 
-The current version uses `.regularMaterial` for the glass-tile depth effect. When targeting macOS Tahoe 26 (Xcode 26), upgrade `GlassTile.swift`:
-
-```swift
-// Before
-RoundedRectangle(cornerRadius: 4)
-    .fill(tint)
-    .background(.regularMaterial, in: .rect(cornerRadius: 4))
-
-// After
-RoundedRectangle(cornerRadius: 4)
-    .fill(.clear)
-    .glassEffect(.regular.tint(tint), in: .rect(cornerRadius: 4))
-```
-
-The tint colors will infuse into the actual Liquid Glass material — true stained glass, not a material approximation.
-
-## Design Reference
-
-Apple Liquid Glass design system quarried at `~/Developer/projects/design/liquid-glass.md`.
+When Xcode 26 ships with macOS Tahoe, upgrade `PaneView` to use native `.glassEffect(.regular.tint())` instead of gradient fills. The palette stays the same; the glass becomes real.
 
 ## License
 
