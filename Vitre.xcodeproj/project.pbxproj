@@ -1,0 +1,313 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DD047340A34687102BDDCB3 /* VitreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189B5EC23FF9F0B9994F88BB /* VitreApp.swift */; };
+		48BC3213EAA89F245E9BB1B8 /* GlassTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D8A50F7E95580AB3F95B8C /* GlassTile.swift */; };
+		A56C771F76FD1030BB2B795E /* HeatmapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3CA3EDB57FC8A4BDA6DC41 /* HeatmapView.swift */; };
+		A80BD7B8386EA5683B76C588 /* EmberScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB080C05BF4D0A1CE129D99D /* EmberScale.swift */; };
+		C763098DE3FC57615919FA60 /* OpenCodeDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44411F557CC15667E59C84D0 /* OpenCodeDB.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08D8A50F7E95580AB3F95B8C /* GlassTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlassTile.swift; sourceTree = "<group>"; };
+		189B5EC23FF9F0B9994F88BB /* VitreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitreApp.swift; sourceTree = "<group>"; };
+		44411F557CC15667E59C84D0 /* OpenCodeDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenCodeDB.swift; sourceTree = "<group>"; };
+		5E64D018BCCAD4D2CE5B1BEB /* Vitre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vitre.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB080C05BF4D0A1CE129D99D /* EmberScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmberScale.swift; sourceTree = "<group>"; };
+		BDDFB3ADC43C8480B689B0CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FF3CA3EDB57FC8A4BDA6DC41 /* HeatmapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatmapView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0118A435D4C4B16C8193812B /* Vitre */ = {
+			isa = PBXGroup;
+			children = (
+				AB080C05BF4D0A1CE129D99D /* EmberScale.swift */,
+				08D8A50F7E95580AB3F95B8C /* GlassTile.swift */,
+				FF3CA3EDB57FC8A4BDA6DC41 /* HeatmapView.swift */,
+				BDDFB3ADC43C8480B689B0CD /* Info.plist */,
+				44411F557CC15667E59C84D0 /* OpenCodeDB.swift */,
+				189B5EC23FF9F0B9994F88BB /* VitreApp.swift */,
+			);
+			path = Vitre;
+			sourceTree = "<group>";
+		};
+		599FBE3ED19F847B01FD8D5B = {
+			isa = PBXGroup;
+			children = (
+				0118A435D4C4B16C8193812B /* Vitre */,
+				8A32C79E94041841CE184408 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8A32C79E94041841CE184408 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E64D018BCCAD4D2CE5B1BEB /* Vitre.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		19A7EDDF1D8B02ADADB21A01 /* Vitre */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53B45ECCA43BA176F252150C /* Build configuration list for PBXNativeTarget "Vitre" */;
+			buildPhases = (
+				12C3EDFF0F55708841CD26FA /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vitre;
+			packageProductDependencies = (
+			);
+			productName = Vitre;
+			productReference = 5E64D018BCCAD4D2CE5B1BEB /* Vitre.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20722D36C40DEC24E376927E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					19A7EDDF1D8B02ADADB21A01 = {
+						DevelopmentTeam = 3BHALMRSXD;
+					};
+				};
+			};
+			buildConfigurationList = E59978D88EBF0C74B0B61166 /* Build configuration list for PBXProject "Vitre" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 599FBE3ED19F847B01FD8D5B;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8A32C79E94041841CE184408 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				19A7EDDF1D8B02ADADB21A01 /* Vitre */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12C3EDFF0F55708841CD26FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80BD7B8386EA5683B76C588 /* EmberScale.swift in Sources */,
+				48BC3213EAA89F245E9BB1B8 /* GlassTile.swift in Sources */,
+				A56C771F76FD1030BB2B795E /* HeatmapView.swift in Sources */,
+				C763098DE3FC57615919FA60 /* OpenCodeDB.swift in Sources */,
+				1DD047340A34687102BDDCB3 /* VitreApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D19E4A3FF1042C7366D01D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		79208917E736E6ACC9BB8D4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3BHALMRSXD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Vitre/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.gurubhat.vitre;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A69A25A4157B21ACCAEB3F5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3BHALMRSXD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Vitre/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.gurubhat.vitre;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EE542ABFF5BD051C25D2D7F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53B45ECCA43BA176F252150C /* Build configuration list for PBXNativeTarget "Vitre" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A69A25A4157B21ACCAEB3F5C /* Debug */,
+				79208917E736E6ACC9BB8D4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E59978D88EBF0C74B0B61166 /* Build configuration list for PBXProject "Vitre" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D19E4A3FF1042C7366D01D5 /* Debug */,
+				EE542ABFF5BD051C25D2D7F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20722D36C40DEC24E376927E /* Project object */;
+}

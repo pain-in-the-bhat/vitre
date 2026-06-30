@@ -1,0 +1,15 @@
+# Xcode
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+DerivedData/
+build/
+
+# XcodeGen
+# project.yml is committed, .xcodeproj is generated
+
+# macOS
+.DS_Store
+
+# Build artifacts
+*.app
+*.appex
